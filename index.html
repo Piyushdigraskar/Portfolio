@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Piyush Digraskar
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Piyush Digraskar
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()"">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()"">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()"">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()"">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile" class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/profile_pic.JPG" alt="Piyush Digraskar">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Piyush Digraskar</h1>
+            <p class="section__text__p2">Full-Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/piyush_resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div class="socials-container">
+                <img src="./assets/linkedin.png" alt="linkedin" class="icon" onclick="location.href=`https://www.linkedin.com/in/piyush-digraskar/`">
+                <img src="./assets/github.png" alt="github" class="icon" onclick="location.href=`https://github.com/Piyushdigraskar`">
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#about'">
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about_pic.JPG" alt="Profile pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-containers">
+                        <img src="./assets/experience.png" alt="Skill icon" class ="icon">
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am Piyush Digaskar, a motivated Full-Stack Developer with a strong foundation in both front-end and back-end technologies. My passion for programming began during the lockdown, starting with C and Java, and quickly evolved into a comprehensive skill set in web development. I am dedicated to creating high-quality, user-friendly applications using modern web development frameworks.
+
+                        I hold a Bachelor of Engineering in Mechanical Engineering from Marathwada Mitra Mandal’s College Of Engineering, Pune, and have honed my skills through various certifications and hands-on projects. My expertise spans a wide range of technologies, including Java, JavaScript, Node.js, React.js, MySQL, MongoDB, Firebase, HTML, CSS, and more.
+                        
+                        I have successfully developed and deployed several full-stack applications, such as a MERN blog with an admin dashboard and a Chatbot-AI application, both live on Render. My projects showcase my abilities in secure authentication, state management with Redux, database schema design with Mongoose, and end-to-end deployment.
+                        
+                        I am passionate about solving complex challenges and contributing to dynamic development teams. With a strong commitment to continuous learning and improvement, I am eager to apply my skills and enthusiasm to real-world projects.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Skills</h1>
+        <div class="skill-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Programming Language</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/java.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>JAVA</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/js.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>JAVASCRIPT</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>TYPESCRIPT</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Backend Technologies</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/nodejs.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>NODE.JS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>EXPRESS.JS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>RESTFUL API</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>SEQUELIZE</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>MONGOOSE</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>FIREBASE</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Frontend Technologies</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/html-5.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/css-3.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/react.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>REACT.JS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>NEXT.JS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>REDUX</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>CONTEXT API</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>HOOKS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>ES6</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>DOM MANIPULATION</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>STATE MANAGEMENT</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Databases and Cloud Services</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/database.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>MONGODB</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/mysql.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>MYSQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>AWS RDS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/aws.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>AWS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/js.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>S3</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Version Control</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/git.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>GIT</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/github.png" alt="skill icon" class="icon">
+                            <div >
+                                <h3>GITHUB</h3>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">
+            Browse my recent 
+        </p>
+        <h1 class="title">Projects</h1>
+        <div class="skill-details-container">
+            <div class="about-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Mern Blog" class="project-img">
+                </div>
+                <h2 class="skill-sub-title project-title">Mern blog with admin dashboard</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href=`https://github.com/Piyushdigraskar/mern-blog`">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href=`https://mern-blog-l2y0.onrender.com`">Live Demo</button>
+                </div>
+                <div class="text-container">
+                    <p>This website is hosted on a free cloud service so opening the site can get delayed by 50 seconds</p>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Chatbot-AI" class="project-img">
+                </div>
+                <h2 class="skill-sub-title project-title">Chatbot-AI</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href=`https://github.com/Piyushdigraskar/Chatbot`">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href=`https://chatbot-e9fi.onrender.com`">Live Demo</button>
+                </div>
+                <div class="text-container">
+                    <p>This website is hosted on a free cloud service so opening the site can get delayed by 50 seconds</p>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.webp" alt="javscript projects" class="project-img">
+                </div>
+                <h2 class="skill-sub-title project-title">24 Javascript Projects</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href=`https://github.com/Piyushdigraskar/Main-Project-Site`">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href=`https://all-24-projects-site-5x148r1f7-piyush-digraskars-projects.vercel.app/
+`">Live Demo</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon">
+                <p><a href="mailto:piyushdigraskar@gmail.com">piyushdigraskar@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin" class="icon contact-icon">
+                <p><a href="www.linkedin.com/in/piyush-digraskar">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; Piyush Digraskar. All rights reserved</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
